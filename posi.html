@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+            margin: 20px; background-color: rgba(250, 204, 88,0.7); font-style: normal;
+            color: black; text-align: justify;
+        }
+    input,select{
+        padding: 0.5rem 0.7rem; margin-bottom: 2%;border-radius: 5px;
+      border: 1px solid; width: 40%;
+    }
+    .btn-primary{
+        background-color:rgba(250, 204, 88,0.7); border-radius: 5px;border-color:rgba(250, 204, 88,0.7);
+        padding: 0.5rem 0.7rem;color: black;
+    }
+    .btn-primary:hover{
+        background-color: crimson; color: aliceblue;
+    }
+    .w3-input{
+        width: 5%;
+    }
+    .container{
+        background-color: rgb(204, 146, 38);margin-left: 20px; width: 50%;
+        padding: 0.5rem 0.7rem; border-radius: 5px;height: 50%;
+        max-width: 100%;position: relative;left: 20%;text-align: center;
+        width: 40%;
+    }
+.paraph{
+    width: 50%; max-width: 50%;
+}
+    </style>
+</head>
+  <div class="container">
+    <p class="paraph">
+ <h1>REGISTRATION FORM</h1>
+<body>
+    <form action="https://formspree.io/f/moquopawk" method="post">
+            <input type="number" placeholder="Number" required min="0" max="10"><br>
+            <input type="date" placeholder="Date" required><br>
+            <input type="password" placeholder="Password" required maxlength="10"><br>
+                <label>Select stationeries</label><br>
+            <input type="text" list="stationeries" autocomplete="off"> 
+        <datalist id="stationeries">
+            <option>book</option>
+            <option>pen</option>
+            <option>ruler</option>
+            <option>pencil</option>
+            <option>crayon </option>
+        </datalist><br>
+            <label>Select subjects</label><br>
+        <select>
+        <optgroup label="Sciences subjects">
+                <option placeholder="Select your subject..."></option> 
+                <option value="1">Biology</option>
+                <option value="2">Physics</option>
+                <option value="3">Chemistry</option>   
+        </optgroup>
+        <optgroup label="Arts subjects">
+            <option value="1">Literature</option>
+            <option value="2">Goverment</option>
+            <option value="3">CRS</option>   
+        </optgroup>
+        </select><br>
+            <input type="radio" class="w3-input" name="fav-language" required>
+                <label>male</label>
+            <input type="radio" class="w3-input" name="fav-language" required>
+                <label>female</label><br>
+            <input type="range"  min="0" max="100" value="50" required>
+        <section>
+            <legend>SUJECTS</legend>
+                <input type="text" required><br>
+                <input type="text" required><br>
+                <input type="text" required><br>
+        </section>
+        <section>
+            <legend>INSTITUTION</legend>
+                <input type="text" required><br>
+                <input type="text" required><br>
+                <input type="text" required><br>
+        </section>
+            <button class="btn-primary" type="submit">submit</button> 
+    </form>
+    </p>
+    </div>
+</body>
+</html>
